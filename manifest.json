@@ -1,10 +1,11 @@
 {
   "name": "Simple Points Tracket",
-  "short_name": "Life",
+  "short_name": "SPT",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#2e7d32",
+  "description": "Simple point tracker for star realms",
   "icons": [
     {
       "src": "icon_512.jpg",
