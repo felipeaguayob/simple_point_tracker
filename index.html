@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contador de Vida PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2e7d32">
+</head>
+<body>
+    <div class="app-container">
+        <section class="player-section" id="player-1">
+            <div class="controls">
+                <button onclick="changeLife(1, 1)">▲1</button>
+                <button onclick="changeLife(1, 5)">▲5</button>
+                <button onclick="changeLife(1, 10)">▲10</button>
+            </div>
+            <div class="life-display">
+                <!-- Ejemplo para Jugador 1 (repetir lo mismo para Jugador 2) -->
+                <div class="shield-container">
+                    <!-- El SVG del Escudo -->
+                    <svg class="shield-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                        <path d="M50 5 L15 20 V50 C15 75 50 95 50 95 C50 95 85 75 85 50 V20 L50 5 Z" 
+                            fill="#2e7d32" 
+                            stroke="#1b5e20" 
+                            stroke-width="2"/>
+                    </svg>
+                    <!-- El número sobre el escudo -->
+                    <span id="life-1" class="life-number">50</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="changeLife(1, -1)">▼1</button>
+                <button onclick="changeLife(1, -5)">▼5</button>
+                <button onclick="changeLife(1, -10)">▼10</button>
+            </div>
+        </section>
+
+        <section class="player-section" id="player-2">
+            <div class="controls">
+                <button onclick="changeLife(2, 1)">▲1</button>
+                <button onclick="changeLife(2, 5)">▲5</button>
+                <button onclick="changeLife(2, 10)">▲10</button>
+            </div>
+            <div class="life-display">
+                <!-- Ejemplo para Jugador 1 (repetir lo mismo para Jugador 2) -->
+                <div class="shield-container">
+                    <!-- El SVG del Escudo -->
+                    <svg class="shield-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                        <path d="M50 5 L15 20 V50 C15 75 50 95 50 95 C50 95 85 75 85 50 V20 L50 5 Z" 
+                            fill="#2e7d32" 
+                            stroke="#1b5e20" 
+                            stroke-width="2"/>
+                    </svg>
+                    <!-- El número sobre el escudo -->
+                    <span id="life-2" class="life-number">50</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="changeLife(2, -1)">▼1</button>
+                <button onclick="changeLife(2, -5)">▼5</button>
+                <button onclick="changeLife(2, -10)">▼10</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
