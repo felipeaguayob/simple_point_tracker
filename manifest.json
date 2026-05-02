@@ -8,7 +8,7 @@
   "description": "Simple point tracker for star realms",
   "icons": [
     {
-      "src": "icon_512.jpg",
+      "src": "icon_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
