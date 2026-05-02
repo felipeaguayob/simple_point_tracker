@@ -74,6 +74,7 @@ body, html {
     display: flex;
     gap: 10px;
     height: 6vh;
+    /* width: 80px; */
     margin: 1vh
     /* text-align: center; */
 }
@@ -90,6 +91,7 @@ button {
     border: none;
     border-radius: 8px;
     touch-action: manipulation;
+    width: 85px;
 }
 
 button:active {
