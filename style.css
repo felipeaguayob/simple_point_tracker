@@ -35,7 +35,7 @@ body, html {
 
 /* Variables de control de tamaño */
 :root {
-    --shield-size: 35vh; /* Cambia este valor para agrandar/encoger todo */
+    --shield-size: 30vh; /* Cambia este valor para agrandar/encoger todo */
 }
 
 .shield-container {
@@ -73,13 +73,13 @@ body, html {
 .controls {
     display: flex;
     gap: 10px;
-    height: 5vh;
+    height: 6vh;
     margin: 1vh
     /* text-align: center; */
 }
 
 #lower_control {
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 button {

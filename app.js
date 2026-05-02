@@ -11,8 +11,19 @@ function changeLife(player, amount) {
     }
 }
 
+function resetNumber(player) {
+    if (player === 1) {
+        score1 = 50;
+        document.getElementById('life-1').innerText = score1;
+    } else {
+        score2 = 50;
+        document.getElementById('life-2').innerText = score2;
+    }
+}
+
 // --- Lógica para mantener la pantalla encendida ---
 let wakeLock = null;
+
 
 async function requestWakeLock() {
     try {
