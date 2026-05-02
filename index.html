@@ -11,7 +11,7 @@
 <body>
     <div class="app-container">
         <section class="player-section" id="player-1">
-            <div class="controls">
+            <div class="controls" id="upper_control">
                 <button onclick="changeLife(1, 1)">▲1</button>
                 <button onclick="changeLife(1, 5)">▲5</button>
                 <button onclick="changeLife(1, 10)">▲10</button>
@@ -30,7 +30,7 @@
                     <span id="life-1" class="life-number">50</span>
                 </div>
             </div>
-            <div class="controls">
+            <div class="controls" id="lower_control">
                 <button onclick="changeLife(1, -1)">▼1</button>
                 <button onclick="changeLife(1, -5)">▼5</button>
                 <button onclick="changeLife(1, -10)">▼10</button>
@@ -38,7 +38,7 @@
         </section>
 
         <section class="player-section" id="player-2">
-            <div class="controls">
+            <div class="controls" id="upper_control">
                 <button onclick="changeLife(2, 1)">▲1</button>
                 <button onclick="changeLife(2, 5)">▲5</button>
                 <button onclick="changeLife(2, 10)">▲10</button>
@@ -57,7 +57,7 @@
                     <span id="life-2" class="life-number">50</span>
                 </div>
             </div>
-            <div class="controls">
+            <div class="controls" id="lower_control">
                 <button onclick="changeLife(2, -1)">▼1</button>
                 <button onclick="changeLife(2, -5)">▼5</button>
                 <button onclick="changeLife(2, -10)">▼10</button>

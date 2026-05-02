@@ -20,6 +20,7 @@ body, html {
     justify-content: space-around;
     align-items: center;
     border: 2px solid #333;
+    height: 50vh;
 }
 
 /* Rotación del Jugador 1 */
@@ -34,13 +35,14 @@ body, html {
 
 /* Variables de control de tamaño */
 :root {
-    --shield-size: 250px; /* Cambia este valor para agrandar/encoger todo */
+    --shield-size: 35vh; /* Cambia este valor para agrandar/encoger todo */
 }
 
 .shield-container {
     position: relative;
     width: var(--shield-size);
     height: var(--shield-size);
+    /* size: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,10 +73,17 @@ body, html {
 .controls {
     display: flex;
     gap: 10px;
+    height: 5vh;
+    margin: 1vh
+    /* text-align: center; */
+}
+
+#lower_control {
+    margin-bottom: 10vh;
 }
 
 button {
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-size: 1.2rem;
     background: #333;
     color: white;
